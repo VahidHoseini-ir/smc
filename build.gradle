@@ -1,39 +1,20 @@
-buildscript {
-    repositories {
-        maven {
-            url 'https://dl.bintray.com/tapsellorg/maven'
-        }
-        mavenCentral()
-        mavenLocal()
-        jcenter()
-        google()
-    }
-    dependencies {
-            classpath 'de.richsource.gradle.plugins:gwt-gradle-plugin:0.6'
-        classpath 'com.android.tools.build:gradle:3.3.2'
-        classpath 'org.robovm:robovm-gradle-plugin:1.14.0'
-    }
+plugins {
+    id 'com.android.application' version '8.5.2' apply false
+    id 'java-library' apply false
+}
+
+ext {
+    appName = 'GMC-GAME'
+    gdxVersion = '1.12.1'
+    gamesvcsVersion = '1.2.0'
+    cuVersion = '2.3.0'
+    oneSignalSdkVersion = '4.8.6'
+    retrofitVersion = '2.11.0'
 }
 
 allprojects {
-    version = '1.0'
-    ext {
-        appName = 'GMC-GAME'
-        gdxVersion = '1.9.8'
-        roboVMVersion = '1.14.0'
-        gamesvcsVersion = '0.2.1'
-        cuVersion = '0.1.0'
-    }
-
     repositories {
-        maven {
-            url 'https://dl.bintray.com/tapsellorg/maven'
-        }
-        mavenLocal()
-        mavenCentral()
-        jcenter()
         google()
-        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
-        maven { url "https://oss.sonatype.org/content/repositories/releases/" }
+        mavenCentral()
     }
 }

@@ -12,10 +12,9 @@ public class G  extends Application {
     public void onCreate() {
         super.onCreate();
         Tapsell.initialize(this, BuildConfig.TAPSELL_KEY);
-        OneSignal.startInit(this)
-                .inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
-                .unsubscribeWhenNotificationsAreDisabled(true)
-                .init();
+        OneSignal.setLogLevel(OneSignal.LOG_LEVEL.WARN, OneSignal.LOG_LEVEL.NONE);
+        OneSignal.initWithContext(this);
+        OneSignal.setAppId(BuildConfig.ONE_SIGNAL_APP_ID);
 
     }
 }
