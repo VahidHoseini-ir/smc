@@ -1,0 +1,123 @@
+package ir.vahidhoseini.gmc.object.items;
+
+import com.badlogic.gdx.audio.Sound;
+import com.badlogic.gdx.graphics.g2d.Animation;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.math.Vector3;
+
+import ir.vahidhoseini.gmc.assets.Assets;
+import ir.vahidhoseini.gmc.audio.SoundManager;
+import ir.vahidhoseini.gmc.object.World;
+import ir.vahidhoseini.gmc.screen.GameScreen;
+import ir.vahidhoseini.gmc.utility.GameSave;
+import ir.vahidhoseini.gmc.utility.Utility;
+
+/**
+ * Created by pedja on 29.3.15..
+ */
+public class Moon extends Item
+{
+    public static final float VELOCITY_POP = 1.6f;
+    public static final float DEF_SIZE = 0.65625f;
+    private Animation<TextureRegion> animation;
+
+    public Moon(World world, Vector2 size, Vector3 position)
+    {
+        super(world, size, position);
+        position.z = 0.052f;
+    }
+
+    @Override
+    public int getType() {
+        return TYPE_MOON;
+    }
+
+    @Override
+    public void initAssets()
+    {
+        TextureAtlas atlas = world.screen.game.assets.manager.get(Assets.ATLAS_DYNAMIC);
+        animation = new Animation(1f, atlas.findRegion("game_items_moon_1"),
+                atlas.findRegion("game_items_moon_2"));
+        animation.setPlayMode(Animation.PlayMode.LOOP_PINGPONG);
+    }
+
+    @Override
+    public void updateItem(float delta)
+    {
+        super.updateItem(delta);
+        if (popFromBox)
+        {
+            // scale velocity to frame units
+            velocity.scl(delta);
+
+            // update position
+            position.add(velocity);
+            mColRect.y = position.y;
+            updateBounds();
+
+            // un-scale velocity (not in frame time)
+            velocity.scl(1 / delta);
+
+            if (position.y >= popTargetPosY)
+            {
+                popFromBox = false;
+                isInBox = false;
+            }
+        }
+    }
+
+    @Override
+    public void popOutFromBox(float popTargetPosY)
+    {
+        super.popOutFromBox(popTargetPosY);
+        visible = true;
+        popFromBox = true;
+        velocity.y = VELOCITY_POP;
+        originalPosY = position.y;
+    }
+
+    @Override
+    public void _render(SpriteBatch spriteBatch)
+    {
+        if (!visible) return;
+        TextureRegion frame = animation.getKeyFrame(stateTime, true);
+        Utility.draw(spriteBatch, frame, position.x, position.y, mDrawRect.height);
+    }
+
+    @Override
+    protected boolean handleDroppedBelowWorld()
+    {
+        world.trashObjects.add(this);
+        return false;
+    }
+
+    @Override
+    public void hitPlayer()
+    {
+        if (isInBox) return;
+        playerHit = true;
+        world.trashObjects.add(this);
+        GameSave.addLifes(3);
+        GameSave.addScore(4000);
+
+        Sound sound = world.screen.game.assets.manager.get(Assets.SOUND_ITEM_MOON);
+        SoundManager.play(sound);
+        ((GameScreen) world.screen).killPointsTextHandler.add(4000, position.x, position.y + mDrawRect.height);
+    }
+
+    @Override
+    public void dispose()
+    {
+        super.dispose();
+        animation = null;
+    }
+
+    @Override
+    public float maxVelocity()
+    {
+        return 0;
+    }
+}

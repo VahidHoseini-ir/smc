@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+
+    <ImageView
+        android:id="@+id/ads_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/ads_close"
+        android:layout_width="28dip"
+        android:layout_height="28dip"
+        android:layout_alignEnd="@+id/ads_background"
+        android:layout_alignRight="@+id/ads_background"
+        android:scaleType="centerInside"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:tint="#fff" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ads_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="28dp"
+            android:gravity="center"
+            android:paddingLeft="22dip"
+            android:paddingRight="22dip"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/ads_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="22dip"
+            android:paddingRight="22dip"
+            android:textColor="#fff" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ads_animation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/ads_btn"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_alignBottom="@+id/ads_background"
+        android:layout_margin="42dip"
+        android:background="#0facf3"
+        android:clickable="true"
+        android:elevation="4dip"
+        android:gravity="center"
+        android:textColor="#fff" />
+
+</RelativeLayout>

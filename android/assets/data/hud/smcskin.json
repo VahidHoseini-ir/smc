@@ -1,0 +1,286 @@
+{
+com.badlogic.gdx.graphics.g2d.BitmapFont: {
+	fa45: {
+		file: fontawesome.fnt
+	}
+	grobold25: {
+		file: grobold25.fnt
+	}
+	grobold25bl: {
+		file: grobold25bl.fnt
+	}
+	grobold50: {
+		file: grobold50.fnt
+	}
+	grobold60bl: {
+		file: grobold60bl.fnt
+	}
+}
+com.badlogic.gdx.graphics.Color: {
+	button_pressed: {
+		r: 0.21960784
+		g: 0.21960784
+		b: 0.21960784
+		a: 1
+	}
+	emph1: {
+		r: 0.105882354
+		g: 0.7176471
+		b: 0.047058824
+		a: 1
+	}
+	emph2: {
+		r: 0.92941177
+		g: 0.50980395
+		b: 0.003921569
+		a: 1
+	}
+	transparent: {
+		r: 1
+		g: 1
+		b: 1
+		a: 0
+	}
+	white: {
+		r: 1
+		g: 1
+		b: 1
+		a: 1
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Skin$TintedDrawable: {
+	button_firing: {
+		name: button_fire
+		color: button_pressed
+	}
+	button_jumping: {
+		name: button_jump
+		color: button_pressed
+	}
+	button_round_pressed: {
+		name: button_round
+		color: button_pressed
+	}
+	button_round_font_pressed: {
+		name: button_round_font
+		color: button_pressed
+	}
+	button_small_font_pressed: {
+		name: button_small_font
+		color: button_pressed
+	}
+	progressbarbef_pressed: {
+		name: progressbarbef
+		color: button_pressed
+	}
+	transparent: {
+		name: progressbar_9
+		color: transparent
+	}
+	checkbox_disabled: {
+		name: checkbox
+		color: button_pressed
+	}
+	checkbox_checked_disabled: {
+		name: checkbox_checked
+		color: button_pressed
+	}
+	button_font_frame_pressed: {
+		name: button_font_frame
+		color: button_pressed
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Button$ButtonStyle: {
+	default: {
+		up: button_round
+		down: button_round_pressed
+		disabled: button_round_pressed
+	}
+	jump: {
+		up: button_jump
+		down: button_jumping
+	}
+	fire: {
+		up: button_fire
+		down: button_firing
+		disabled: button_firing
+	}
+	small: {
+		up: button_small_font
+		down: button_small_font_pressed
+		disabled: button_small_font_pressed
+	}
+	shadow: {
+		up: background2
+	}
+	framed: {
+		up: button_font_frame
+		down: button_font_frame_pressed
+		disabled: button_font_frame_pressed
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.CheckBox$CheckBoxStyle: {
+	default: {
+		checkboxOn: checkbox_checked
+		checkboxOff: checkbox
+		checkboxOnDisabled: checkbox_checked_disabled
+		checkboxOffDisabled: checkbox_disabled
+		font: grobold60bl
+		disabledFontColor: button_pressed
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.ImageButton$ImageButtonStyle: {
+	default: {
+		up: button_round
+		down: button_round_pressed
+		disabled: button_round_pressed
+	}
+	small: {
+		imageUp: button_small_font
+		imageDown: button_small_font_pressed
+		disabled: button_small_font_pressed
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.ImageTextButton$ImageTextButtonStyle: {
+	default: {
+		font: grobold50
+		fontColor: white
+		downFontColor: button_pressed
+		disabledFontColor: button_pressed
+		up: button_round_font
+		down: button_round_font_pressed
+		disabled: button_round_font_pressed
+	}
+	small: {
+		font: grobold25
+	}
+	framed: {
+		font: grobold60bl
+		disabledFontColor: button_pressed
+		up: button_font_frame
+		down: button_font_frame_pressed
+		disabled: button_font_frame_pressed
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle: {
+	default: {
+		font: grobold50
+		fontColor: white
+	}
+	small: {
+		font: grobold25
+		fontColor: white
+	}
+	outline: {
+		font: grobold60bl
+	}
+	outline_small: {
+		font: grobold25bl
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.ProgressBar$ProgressBarStyle: {
+	default-horizontal: {
+		background: transparent
+		knobBefore: progressbarbef
+	}
+	default-vertical: {
+		background: progressbar_9
+		knobBefore: progressbarbef
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.ScrollPane$ScrollPaneStyle: {
+	default: {
+		hScroll: progressbarbef_pressed
+		hScrollKnob: progressbarbef
+		vScroll: progressbarbef_pressed
+		vScrollKnob: progressbarbef
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Slider$SliderStyle: {
+	default-horizontal: {
+		background: progressbar_9
+		knob: progressbarbef
+		knobBefore: progressbarbef
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle: {
+	default: {
+		font: grobold50
+		fontColor: white
+		downFontColor: button_pressed
+		disabledFontColor: button_pressed
+		up: button_round_font
+		down: button_round_font_pressed
+		disabled: button_round_font_pressed
+	}
+	small: {
+		font: grobold25
+		fontColor: white
+		downFontColor: button_pressed
+		disabledFontColor: button_pressed
+		up: button_small_font
+		down: button_small_font_pressed
+		disabled: button_small_font_pressed
+	}
+	fa45: {
+		font: fa45
+		fontColor: white
+		downFontColor: button_pressed
+		disabledFontColor: button_pressed
+		up: button_round
+		down: button_round_pressed
+		disabled: button_round_pressed
+	}
+	fa45noborder: {
+		font: fa45
+	}
+	smallnoborder: {
+		font: grobold25
+		fontColor: white
+		downFontColor: button_pressed
+		disabledFontColor: button_pressed
+	}
+	framed: {
+		font: grobold60bl
+		disabledFontColor: button_pressed
+		up: button_font_frame
+		down: button_font_frame_pressed
+		disabled: button_font_frame_pressed
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.TextField$TextFieldStyle: {
+	default: {
+		font: grobold50
+		fontColor: white
+		disabledFontColor: button_pressed
+		background: button_round_font
+		disabledBackground: button_round_font_pressed
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.TextTooltip$TextTooltipStyle: {
+	default: {
+		label: default
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Touchpad$TouchpadStyle: {
+	default: {
+		background: touchpad
+		knob: touchpad_knob
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle: {
+	default: {
+		background: button_round
+		titleFont: grobold50
+		stageBackground: stagebackground
+	}
+	small: {
+		background: background2
+		titleFont: grobold25
+	}
+	frameless: {
+		titleFont: grobold25
+		stageBackground: stagebackground
+	}
+}
+}

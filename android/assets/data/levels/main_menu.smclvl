@@ -1,0 +1,349 @@
+{
+    "objects": [
+        {
+            "height": 2,
+            "massive_type": "passive",
+            "obj_class": "sprite",
+            "texture_name": "data/static.pack:ground_jungle_1_big_plant_2",
+            "texture_atlas": "data/static.pack",
+            "posy": 1.015625,
+            "width": 1,
+            "posx": 11.078125
+        },
+        {
+            "height": 1,
+            "massive_type": "massive",
+            "obj_class": "sprite",
+            "texture_name": "data/static.pack:ground_green_3_ground_top_left",
+            "texture_atlas": "data/static.pack",
+            "posy": 0,
+            "width": 1,
+            "posx": 0
+        },
+        {
+            "height": 1,
+            "massive_type": "massive",
+            "obj_class": "sprite",
+            "texture_name": "data/static.pack:ground_green_3_ground_top_1",
+            "texture_atlas": "data/static.pack",
+            "posy": 0,
+            "width": 1,
+            "posx": 1
+        },
+        {
+            "height": 1,
+            "massive_type": "massive",
+            "obj_class": "sprite",
+            "texture_name": "data/static.pack:ground_green_3_ground_top_1",
+            "texture_atlas": "data/static.pack",
+            "posy": 0,
+            "width": 1,
+            "posx": 2
+        },
+        {
+            "height": 1,
+            "massive_type": "massive",
+            "obj_class": "sprite",
+            "texture_name": "data/static.pack:ground_green_3_ground_top_1",
+            "texture_atlas": "data/static.pack",
+            "posy": 0,
+            "width": 1,
+            "posx": 3
+        },
+        {
+            "height": 1,
+            "massive_type": "massive",
+            "obj_class": "sprite",
+            "texture_name": "data/static.pack:ground_green_3_ground_top_1",
+            "texture_atlas": "data/static.pack",
+            "posy": 0,
+            "width": 1,
+            "posx": 4
+        },
+        {
+            "height": 1,
+            "massive_type": "massive",
+            "obj_class": "sprite",
+            "texture_name": "data/static.pack:ground_green_3_ground_top_1",
+            "texture_atlas": "data/static.pack",
+            "posy": 0,
+            "width": 1,
+            "posx": 5
+        },
+        {
+            "height": 1,
+            "massive_type": "massive",
+            "obj_class": "sprite",
+            "texture_name": "data/static.pack:ground_green_3_ground_top_1",
+            "texture_atlas": "data/static.pack",
+            "posy": 0,
+            "width": 1,
+            "posx": 6
+        },
+        {
+            "height": 1,
+            "massive_type": "massive",
+            "obj_class": "sprite",
+            "texture_name": "data/static.pack:ground_green_3_ground_top_1",
+            "texture_atlas": "data/static.pack",
+            "posy": 0,
+            "width": 1,
+            "posx": 7
+        },
+        {
+            "height": 1,
+            "massive_type": "massive",
+            "obj_class": "sprite",
+            "texture_name": "data/static.pack:ground_green_3_ground_top_1",
+            "texture_atlas": "data/static.pack",
+            "posy": 0,
+            "width": 1,
+            "posx": 8
+        },
+        {
+            "height": 1,
+            "massive_type": "massive",
+            "obj_class": "sprite",
+            "texture_name": "data/static.pack:ground_green_3_ground_top_1",
+            "texture_atlas": "data/static.pack",
+            "posy": 0,
+            "width": 1,
+            "posx": 9
+        },
+        {
+            "height": 1,
+            "massive_type": "massive",
+            "obj_class": "sprite",
+            "texture_name": "data/static.pack:ground_green_3_ground_top_1",
+            "texture_atlas": "data/static.pack",
+            "posy": 0,
+            "width": 1,
+            "posx": 10
+        },
+        {
+            "height": 1,
+            "massive_type": "massive",
+            "obj_class": "sprite",
+            "texture_name": "data/static.pack:ground_green_3_ground_top_1",
+            "texture_atlas": "data/static.pack",
+            "posy": 0,
+            "width": 1,
+            "posx": 11
+        },
+        {
+            "height": 1,
+            "massive_type": "massive",
+            "obj_class": "sprite",
+            "texture_name": "data/static.pack:ground_green_3_ground_top_1",
+            "texture_atlas": "data/static.pack",
+            "posy": 0,
+            "width": 1,
+            "posx": 12
+        },
+        {
+            "height": 4,
+            "massive_type": "passive",
+            "obj_class": "sprite",
+            "texture_name": "data/static.pack:ground_jungle_1_big_plant_1",
+            "texture_atlas": "data/static.pack",
+            "posy": 1,
+            "width": 4,
+            "posx": 0.5
+        },
+        {
+            "height": 0.5,
+            "massive_type": "passive",
+            "obj_class": "sprite",
+            "texture_name": "data/static.pack:ground_jungle_1_grass_2",
+            "texture_atlas": "data/static.pack",
+            "posy": 1,
+            "width": 1,
+            "posx": 3.875
+        },
+        {
+            "height": 0.5,
+            "massive_type": "passive",
+            "obj_class": "sprite",
+            "texture_name": "data/static.pack:ground_jungle_1_grass_2",
+            "texture_atlas": "data/static.pack",
+            "posy": 1,
+            "width": 1,
+            "posx": 8.234375
+        },
+        {
+            "height": 0.78125,
+            "posy": 1,
+            "width": 1.5625,
+            "posx": 9.6875,
+            "texture_atlas": "data/static.pack",
+            "massive_type": "massive",
+            "obj_class": "sprite",
+            "texture_name": "data/static.pack:pipes_orange_ver"
+        },
+        {
+            "height": 0.78125,
+            "posy": 1.78125,
+            "width": 1.5625,
+            "posx": 9.6875,
+            "texture_atlas": "data/static.pack",
+            "massive_type": "massive",
+            "obj_class": "sprite",
+            "texture_name": "data/static.pack:pipes_orange_ver"
+        },
+        {
+            "height": 0.78125,
+            "posy": 2.5625,
+            "width": 1.5625,
+            "posx": 9.6875,
+            "texture_atlas": "data/static.pack",
+            "massive_type": "massive",
+            "obj_class": "sprite",
+            "texture_name": "data/static.pack:pipes_orange_up"
+        },
+        {
+            "height": 0.703125,
+            "speed": 0.090625,
+            "max_distance": 3,
+            "obj_class": "enemy",
+            "enemy_class": "flyon",
+            "posy": 2.40625,
+            "width": 0.703125,
+            "posx": 10.125
+        },
+        {
+            "height": 0.671875,
+            "color": "brown"
+            "obj_class": "enemy",
+            "enemy_class": "furball",
+            "posy": 1.03125,
+            "width": 0.671875,
+            "posx": 7.21875
+        },
+        {
+            "height": 0.5,
+            "massive_type": "passive",
+            "obj_class": "sprite",
+            "texture_name": "data/static.pack:ground_jungle_1_grass_3",
+            "texture_atlas": "data/static.pack",
+            "posy": 1,
+            "width": 0.5,
+            "posx": 6.515625
+        },
+        {
+            "height": 0.34375,
+            "posy": 4.265625,
+            "width": 0.34375,
+            "posx": 1.40625,
+            "texture_atlas": "data/static.pack",
+            "massive_type": "massive",
+            "obj_class": "sprite",
+            "texture_name": "data/static.pack:ground_jungle_1_slider_1_green_left"
+        },
+        {
+            "height": 0.34375,
+            "posy": 4.265625,
+            "width": 0.34375,
+            "posx": 1.75,
+            "texture_atlas": "data/static.pack",
+            "massive_type": "massive",
+            "obj_class": "sprite",
+            "texture_name": "data/static.pack:ground_jungle_1_slider_1_green_middle"
+        },
+        {
+            "height": 0.34375,
+            "posy": 4.265625,
+            "width": 0.34375,
+            "posx": 2.09375,
+            "texture_atlas": "data/static.pack",
+            "massive_type": "massive",
+            "obj_class": "sprite",
+            "texture_name": "data/static.pack:ground_jungle_1_slider_1_green_middle"
+        },
+        {
+            "height": 0.34375,
+            "posy": 4.265625,
+            "width": 0.34375,
+            "posx": 2.4375,
+            "texture_atlas": "data/static.pack",
+            "massive_type": "massive",
+            "obj_class": "sprite",
+            "texture_name": "data/static.pack:ground_jungle_1_slider_1_green_middle"
+        },
+        {
+            "flip_data": {
+                "flip_x": true,
+                "flip_y": false
+            },
+            "height": 0.34375,
+            "posy": 4.265625,
+            "width": 0.34375,
+            "posx": 2.78125,
+            "texture_atlas": "data/static.pack",
+            "massive_type": "massive",
+            "obj_class": "sprite",
+            "rotationY": 180,
+            "texture_name": "data/static.pack:ground_jungle_1_slider_1_green_left"
+        },
+        {
+            "height": 0.375,
+            "massive_type": "massive",
+            "obj_class": "sprite",
+            "texture_name": "data/static.pack:ground_green_1_hedges_wild_medium",
+            "texture_atlas": "data/static.pack",
+            "posy": 3.015625,
+            "width": 1.5,
+            "posx": 9.75
+        },
+        {
+            "height": 0.5625,
+            "color": "brown",
+            "obj_class": "enemy",
+            "enemy_class": "eato",
+            "posy": 1,
+            "width": 0.5625,
+            "posx": 3.125
+        },
+        {
+            "height": 0.234375,
+            "posy": 1,
+            "width": 0.234375,
+            "posx": 3.125,
+            "obj_class": "enemy_stopper"
+        },
+        {
+            "mushroom_type": 0,
+            "height": 0.59375,
+            "color": "red",
+            "posy": 3.046875,
+            "width": 0.59375,
+            "posx": 11.265625,
+            "type": "goldpiece",
+            "obj_class": "item"
+        },
+        {
+            "mushroom_type": 0,
+            "height": 0.65625,
+            "posy": 7.46875,
+            "width": 0.65625,
+            "posx": 11.25,
+            "type": "moon",
+            "obj_class": "item",
+        }
+    ],
+    "background": {
+        "g_1": 187,
+        "g_2": 154,
+        "r_2": 66,
+        "r_1": 78,
+        "b_1": 55,
+        "b_2": 0,
+        "texture_name": "data/game/background/more_hills.png"
+    },
+    "info": {
+        "level_height": 62,
+        "level_width": 312,
+        "level_music": [
+            "data/music/land/land_4.ogg"
+        ]
+    }
+}
