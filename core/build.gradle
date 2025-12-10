@@ -1,22 +1,31 @@
-apply plugin: "java"
+plugins {
+    id 'java-library'
+}
 
-sourceCompatibility = 1.7
-[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
 
-sourceSets.main.java.srcDirs = [ "src/" ]
-sourceSets.test.java.srcDirs = ["/test"]
+sourceSets {
+    main {
+        java.srcDirs = ['src']
+    }
+    test {
+        java.srcDirs = ['test']
+    }
+}
 
 dependencies {
-    compile "com.badlogicgames.gdx:gdx:$gdxVersion"
-    compile "com.badlogicgames.gdx:gdx-controllers:$gdxVersion"
-    compile "de.golfgl.gdxgamesvcs:gdx-gamesvcs-core:$gamesvcsVersion"
-    compile "de.golfgl.gdxcontrollerutils:gdx-controllerutils-mapping:$cuVersion"
-    compile "de.golfgl.gdxcontrollerutils:gdx-controllerutils-scene2d:$cuVersion"
+    implementation "com.badlogicgames.gdx:gdx:$gdxVersion"
+    implementation "com.badlogicgames.gdx:gdx-controllers:$gdxVersion"
+    implementation "de.golfgl.gdxgamesvcs:gdx-gamesvcs-core:$gamesvcsVersion"
+    implementation "de.golfgl.gdxcontrollerutils:gdx-controllerutils-mapping:$cuVersion"
+    implementation "de.golfgl.gdxcontrollerutils:gdx-controllerutils-scene2d:$cuVersion"
 
-    testCompile "junit:junit:4.12"
-    testCompile "org.mockito:mockito-core:2.2.7"
-
-    testCompile "com.badlogicgames.gdx:gdx-backend-headless:$gdxVersion"
-    testCompile "com.badlogicgames.gdx:gdx:$gdxVersion"
-    testCompile "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+    testImplementation "junit:junit:4.13.2"
+    testImplementation "org.mockito:mockito-core:5.12.0"
+    testImplementation "com.badlogicgames.gdx:gdx-backend-headless:$gdxVersion"
+    testImplementation "com.badlogicgames.gdx:gdx:$gdxVersion"
+    testImplementation "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
 }

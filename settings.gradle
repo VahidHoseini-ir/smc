@@ -1,2 +1,10 @@
-include 'desktop', 'android', 'ios', 'html', 'core', 'smc-level-parser'
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
 
+rootProject.name = "smc"
+include 'android', 'core'
